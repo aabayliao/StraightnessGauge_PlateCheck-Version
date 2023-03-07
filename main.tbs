@@ -1,0 +1,84 @@
+include "global.tbh"
+
+'sock 7: tibbit 14 name TBT14_S7
+'sock 5: tibbit 07 
+'sock 9: tibbit 12 
+'sock 11: tibbit 33 
+'sock 10: tibbit 20 
+'sock 6: tibbit 20 
+'sock 2: tibbit 20 
+
+
+dim interface_ready(MAX_NUM_INTERFACES) as no_yes
+
+dim current_interface as pl_sock_interfaces
+
+dim device_net_ip as string
+dim device_net_mask as string
+dim device_net_gateway as string
+
+dim TBT14_S7_CHANNEL_NUM as byte
+        
+dim S11_power_fail_counter as byte = 0
+
+dim S1_SOCK_NUM as byte
+
+dim S2_SOCK_NUM as byte
+
+dim S3_SOCK_NUM as byte
+
+
+sub on_sys_init()
+    boot()
+end sub
+
+sub on_sys_timer()
+    dhcp_proc_timer()
+
+end sub
+
+sub on_sock_data_arrival()
+    dhcp_proc_data()
+
+end sub
+
+sub on_io_int(linestate as byte)
+
+    if (linestate and &h32) <>0 then
+        dim line_state as low_high=io.lineget(TBT33_PGOOD_S11)
+        if line_state=LOW then
+            S11_power_fail_counter=S11_power_fail_counter+1
+            sys.debugprint(str(S11_power_fail_counter) + " power failures detected on the Tibbit #33 in socket 11\r\n")
+            'After a certain number of failures, you can initiate fail safe operations.
+        end if   
+    end if
+
+end sub
+
+sub on_sock_event(newstate as pl_sock_state,newstatesimple as pl_sock_state_simple)
+
+    if sock.num=S1_SOCK_NUM then
+        'sock S1 events
+        if newstatesimple=PL_SSTS_EST then
+            sys.debugprint("client connected to S1 socket\r\n")
+        end if
+    end if
+            
+
+    if sock.num=S2_SOCK_NUM then
+        'sock S2 events
+        if newstatesimple=PL_SSTS_EST then
+            sys.debugprint("client connected to S2 socket\r\n")
+        end if
+    end if
+            
+
+    if sock.num=S3_SOCK_NUM then
+        'sock S3 events
+        if newstatesimple=PL_SSTS_EST then
+            sys.debugprint("client connected to S3 socket\r\n")
+        end if
+    end if
+            
+
+end sub

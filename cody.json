@@ -1,0 +1,533 @@
+{
+  "id": "64808d1f-3678-4f83-8b7b-7ac3cc829df5",
+  "name": "StraightnessGauge_PlateCheck Version",
+  "device": "TPP2W(G2)",
+  "description": "",
+  "features": [
+    {
+      "id": "sock",
+      "settings": [
+        {
+          "id": "ID",
+          "value": "lewl00nkuigums17a3s"
+        }
+      ]
+    },
+    {
+      "id": "dhcp",
+      "settings": [
+        {
+          "id": "ID",
+          "value": "lewl00nk2ec0a6ozcio"
+        }
+      ]
+    },
+    {
+      "id": "general",
+      "name": "General",
+      "settings": [
+        {
+          "id": "ID",
+          "value": "lewabxrt2qtugkgvh6b"
+        },
+        {
+          "id": "LEDPAT",
+          "value": "1"
+        },
+        {
+          "id": "FIRMWARENAME",
+          "value": "SgPlatChk"
+        },
+        {
+          "id": "FIRMWAREVERSION",
+          "value": "1.0.0"
+        },
+        {
+          "id": "INTERFACE_SWITCHING",
+          "value": "0"
+        },
+        {
+          "id": "DEFAULT_INTERFACE",
+          "value": "PL_SOCK_INTERFACE_NET"
+        }
+      ]
+    },
+    {
+      "id": "net",
+      "name": "Ethernet",
+      "settings": [
+        {
+          "id": "ID",
+          "value": "lewl00nk2q86h8g0ms7"
+        },
+        {
+          "id": "ENABLED",
+          "value": "1"
+        },
+        {
+          "id": "DHCP",
+          "value": "0"
+        },
+        {
+          "id": "IP",
+          "value": "192.168.50.114"
+        },
+        {
+          "id": "NM",
+          "value": "255.255.255.0"
+        },
+        {
+          "id": "GI",
+          "value": "192.168.50.1"
+        }
+      ]
+    },
+    {
+      "id": "boardsetting",
+      "name": "Board Settings",
+      "settings": [
+        {
+          "id": "ID",
+          "value": "lewabxrsskgc776nbb"
+        },
+        {
+          "id": "POE",
+          "value": "0"
+        },
+        {
+          "id": "5VDIRECT",
+          "value": "1"
+        },
+        {
+          "id": "WIFIANTENNA",
+          "value": "0"
+        },
+        {
+          "id": "GPRSANTENNA",
+          "value": "0"
+        },
+        {
+          "id": "TPB",
+          "value": "true"
+        },
+        {
+          "id": "VPK",
+          "value": "1"
+        },
+        {
+          "id": "DIN",
+          "value": "1"
+        },
+        {
+          "id": "POWERADAPTER",
+          "value": "apr-p0008"
+        },
+        {
+          "id": "ASM",
+          "value": "asm+rp"
+        },
+        {
+          "id": "NOTES",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "tibbit_14",
+      "name": "Tibbit 14",
+      "settings": [
+        {
+          "id": "ID",
+          "value": "lewacctwiopadwk0pf"
+        },
+        {
+          "id": "SOCKET",
+          "value": "7"
+        },
+        {
+          "id": "TIBBIT",
+          "value": "14"
+        },
+        {
+          "id": "PLATFORM",
+          "value": ""
+        },
+        {
+          "id": "NAME",
+          "value": "TBT14_S7"
+        },
+        {
+          "id": "USESSI",
+          "value": "YES"
+        }
+      ]
+    },
+    {
+      "id": "tibbit_07",
+      "name": "Tibbit 07",
+      "settings": [
+        {
+          "id": "ID",
+          "value": "lewad6p8iixcnibb72"
+        },
+        {
+          "id": "SOCKET",
+          "value": "5"
+        },
+        {
+          "id": "TIBBIT",
+          "value": "07"
+        },
+        {
+          "id": "PLATFORM",
+          "value": ""
+        },
+        {
+          "id": "LN1NAME",
+          "value": "TBT07_S5_LN1NAME"
+        },
+        {
+          "id": "LN1STATE",
+          "value": "HIGH"
+        },
+        {
+          "id": "LN2NAME",
+          "value": "TBT07_S5_LN2NAME"
+        },
+        {
+          "id": "LN2STATE",
+          "value": "HIGH"
+        }
+      ]
+    },
+    {
+      "id": "tibbit_12",
+      "name": "tibbit_12",
+      "settings": [
+        {
+          "id": "ID",
+          "value": "lewadejgz3teu5ev7ne"
+        },
+        {
+          "id": "SOCKET",
+          "value": "9"
+        },
+        {
+          "id": "TIBBIT",
+          "value": "12"
+        },
+        {
+          "id": "PLATFORM",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "tibbit_33",
+      "name": "Tibbit 33",
+      "settings": [
+        {
+          "id": "ID",
+          "value": "lewadrlzoj89eo7t3q"
+        },
+        {
+          "id": "SOCKET",
+          "value": "11"
+        },
+        {
+          "id": "TIBBIT",
+          "value": "33"
+        },
+        {
+          "id": "PLATFORM",
+          "value": ""
+        },
+        {
+          "id": "GENERAL",
+          "value": ""
+        },
+        {
+          "id": "PF",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "id": "tibbit_20",
+      "name": "tibbit_20",
+      "settings": [
+        {
+          "id": "ID",
+          "value": "lewadwl0o6nvvc7ezn"
+        },
+        {
+          "id": "SOCKET",
+          "value": "10"
+        },
+        {
+          "id": "TIBBIT",
+          "value": "20"
+        },
+        {
+          "id": "PLATFORM",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "tibbit_20",
+      "name": "tibbit_20",
+      "settings": [
+        {
+          "id": "ID",
+          "value": "lewae0zmcaadkipjk9p"
+        },
+        {
+          "id": "SOCKET",
+          "value": "6"
+        },
+        {
+          "id": "TIBBIT",
+          "value": "20"
+        },
+        {
+          "id": "PLATFORM",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "tibbit_20",
+      "name": "tibbit_20",
+      "settings": [
+        {
+          "id": "ID",
+          "value": "lewaegnw6il86q8hdxd"
+        },
+        {
+          "id": "SOCKET",
+          "value": "2"
+        },
+        {
+          "id": "TIBBIT",
+          "value": "20"
+        },
+        {
+          "id": "PLATFORM",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "httpserver",
+      "name": "HTTP Server",
+      "settings": [
+        {
+          "id": "ID",
+          "value": "lewl00nk0ndy4bia5dhr"
+        },
+        {
+          "id": "ENABLED",
+          "value": "1"
+        },
+        {
+          "id": "INTERFACE",
+          "value": "NET"
+        },
+        {
+          "id": "PORT",
+          "value": "80"
+        },
+        {
+          "id": "SOCKETS",
+          "value": "1"
+        },
+        {
+          "id": "TXBUF",
+          "value": "10"
+        },
+        {
+          "id": "RXBUF",
+          "value": "10"
+        },
+        {
+          "id": "VARBUF",
+          "value": "1"
+        },
+        {
+          "id": "ENDPOINTS",
+          "value": []
+        }
+      ]
+    },
+    {
+      "id": "socket",
+      "name": "Socket",
+      "settings": [
+        {
+          "id": "ID",
+          "value": "lewl00nl9hlef3vp94"
+        },
+        {
+          "id": "ENABLED",
+          "value": "1"
+        },
+        {
+          "id": "SOCKETS",
+          "value": [
+            {
+              "id": "socket_connection",
+              "name": "Socket Connection",
+              "settings": [
+                {
+                  "id": "ID",
+                  "value": "lewl68hexv0l2bmq8vh"
+                },
+                {
+                  "id": "NAME",
+                  "value": "S1"
+                },
+                {
+                  "id": "PROTOCOL",
+                  "value": "PL_SOCK_PROTOCOL_TCP"
+                },
+                {
+                  "id": "ROLE",
+                  "value": "server"
+                },
+                {
+                  "id": "LISTENPORTS",
+                  "value": "1001"
+                },
+                {
+                  "id": "SERVERIP",
+                  "value": "1.0.0.1"
+                },
+                {
+                  "id": "SERVERPORT",
+                  "value": "6480"
+                },
+                {
+                  "id": "INTERFACES",
+                  "value": "NET"
+                },
+                {
+                  "id": "TARGET_INTERFACE",
+                  "value": "PL_SOCK_INTERFACE_NET"
+                },
+                {
+                  "id": "TXBUF",
+                  "value": "1"
+                },
+                {
+                  "id": "RXBUF",
+                  "value": "1"
+                }
+              ]
+            },
+            {
+              "id": "socket_connection",
+              "name": "Socket Connection",
+              "settings": [
+                {
+                  "id": "ID",
+                  "value": "lewl74gy8hacab6m0pd"
+                },
+                {
+                  "id": "NAME",
+                  "value": "S2"
+                },
+                {
+                  "id": "PROTOCOL",
+                  "value": "PL_SOCK_PROTOCOL_TCP"
+                },
+                {
+                  "id": "ROLE",
+                  "value": "server"
+                },
+                {
+                  "id": "LISTENPORTS",
+                  "value": "1002"
+                },
+                {
+                  "id": "SERVERIP",
+                  "value": "1.0.0.1"
+                },
+                {
+                  "id": "SERVERPORT",
+                  "value": "6480"
+                },
+                {
+                  "id": "INTERFACES",
+                  "value": "NET"
+                },
+                {
+                  "id": "TARGET_INTERFACE",
+                  "value": "PL_SOCK_INTERFACE_NET"
+                },
+                {
+                  "id": "TXBUF",
+                  "value": "1"
+                },
+                {
+                  "id": "RXBUF",
+                  "value": "1"
+                }
+              ]
+            },
+            {
+              "id": "socket_connection",
+              "name": "Socket Connection",
+              "settings": [
+                {
+                  "id": "ID",
+                  "value": "lewl7pxut7bdq7ve64q"
+                },
+                {
+                  "id": "NAME",
+                  "value": "S3"
+                },
+                {
+                  "id": "PROTOCOL",
+                  "value": "PL_SOCK_PROTOCOL_TCP"
+                },
+                {
+                  "id": "ROLE",
+                  "value": "server"
+                },
+                {
+                  "id": "LISTENPORTS",
+                  "value": "1003"
+                },
+                {
+                  "id": "SERVERIP",
+                  "value": "1.0.0.1"
+                },
+                {
+                  "id": "SERVERPORT",
+                  "value": "6480"
+                },
+                {
+                  "id": "INTERFACES",
+                  "value": "NET"
+                },
+                {
+                  "id": "TARGET_INTERFACE",
+                  "value": "PL_SOCK_INTERFACE_NET"
+                },
+                {
+                  "id": "TXBUF",
+                  "value": "1"
+                },
+                {
+                  "id": "RXBUF",
+                  "value": "1"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

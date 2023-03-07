@@ -1,0 +1,37 @@
+'DEFINES-------------------------------------------------------------
+#define WLN_AVAILABLE 0
+#define DHCP_DEBUG_PRINT 1
+const FIRMWARE_VERSION="{SgPlatChk 1.0.0}"
+const MAX_NUM_INTERFACES=4
+const TBT14_S7_CLK=PL_IO_NUM_15_TX3
+const TBT14_S7_DATA=PL_IO_NUM_14_RX3
+const TBT14_S7_LOAD=PL_IO_NUM_3
+const TBT14_S7_BUSY=PL_IO_NUM_19_INT3
+const TBT07_S5_LN1NAME_RL1 = PL_IO_NUM_13_TX2
+const TBT07_S5_LN2NAME_RL2 = PL_IO_NUM_12_RX2
+const TBT33_SHUTDOWN_S11 = PL_IO_NUM_34
+const TBT33_NC1_S11 = PL_IO_NUM_35
+const TBT33_NC2_S11 = PL_IO_NUM_5
+const TBT33_PGOOD_S11 = PL_IO_NUM_21_INT5
+'INCLUDES------------------------------------------------------------
+include "sock\sock.tbh"
+include "dhcp\dhcp.tbh"
+include "ssi\ssi.tbh"
+include "libraries\super_i2c.tbh"
+include "libraries\tbt14.tbh"
+'DECLARATIONS--------------------------------------------------------
+declare interface_ready(MAX_NUM_INTERFACES) as no_yes
+declare current_interface as pl_sock_interfaces
+declare sub close_interface_sockets(interface as pl_sock_interfaces)
+declare device_net_ip as string
+declare device_net_mask as string
+declare device_net_gateway as string
+declare TBT14_S7_CHANNEL_NUM as byte
+declare S11_power_fail_counter as byte
+declare sub tbt33_system_hard_reboot()
+declare sub tbt_33_shut_down(shutdown_io as pl_io_num)
+declare sub tbt_33_enable(shutdown_io as pl_io_num) 
+declare S1_SOCK_NUM as byte
+declare S2_SOCK_NUM as byte
+declare S3_SOCK_NUM as byte
+declare sub boot()

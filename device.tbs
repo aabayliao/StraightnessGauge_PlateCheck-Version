@@ -1,0 +1,78 @@
+include "global.tbh"
+
+
+
+
+sub callback_dhcp_ok(renew as no_yes, interface as pl_sock_interfaces, byref ip as string, byref gateway_ip as string, byref netmask as string, lease_time as dword)
+    
+end sub
+        
+
+sub callback_dhcp_failure(interface as pl_sock_interfaces,failure_code as en_dhcp_status_codes)
+    
+end sub
+        
+
+sub callback_dhcp_pre_clear_ip(interface as pl_sock_interfaces)
+    
+end sub
+        
+
+sub callback_dhcp_pre_buffrq(required_buff_pages as byte)
+    
+end sub
+        
+
+sub callback_dhcp_buff_released()
+    
+end sub
+        
+sub close_interface_sockets(interface as pl_sock_interfaces)
+    dim f,sock_num_bup as byte
+    dim i as word
+
+    sock_num_bup=sock.num
+
+    for f=0 to sock.numofsock-1
+        sock.num=f
+        if sock.targetinterface=interface then
+            sock.discard
+        end if
+    next f
+
+    i=sys.timercount
+
+    wait_close_interface_sockets:
+    for f=0 to sock.numofsock-1
+        sock.num=f
+        if sock.targetinterface=interface and sock.statesimple<>PL_SSTS_CLOSED and sys.timercount-i<3 and sys.timercount>=i then
+            goto wait_close_interface_sockets
+        end if
+    next f
+
+    sock.num=sock_num_bup
+
+end sub
+ 
+
+sub tbt33_system_hard_reboot()
+'Pulling the shutdown line low will trigger a system hard reboot.  
+'Special care should be taken when doing this.
+    
+    tbt_33_shut_down(TBT33_SHUTDOWN_S11)
+
+
+end sub    
+        
+
+sub tbt_33_shut_down(shutdown_io as pl_io_num)
+    io.num=shutdown_io 
+    io.state=LOW
+end sub
+        
+
+sub tbt_33_enable(shutdown_io as pl_io_num)
+    io.num=shutdown_io 
+    io.state=HIGH
+end sub
+        

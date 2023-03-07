@@ -1,0 +1,6 @@
+libraries/
+Platforms/
+tmp/
+tide
+*.tprusr
+*.tpc
