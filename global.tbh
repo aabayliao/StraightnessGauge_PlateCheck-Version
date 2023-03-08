@@ -14,9 +14,9 @@ const TBT33_NC1_S11 = PL_IO_NUM_35
 const TBT33_NC2_S11 = PL_IO_NUM_5
 const TBT33_PGOOD_S11 = PL_IO_NUM_21_INT5
 'INCLUDES------------------------------------------------------------
-include "sock\sock.tbh"
-include "dhcp\dhcp.tbh"
-include "ssi\ssi.tbh"
+include "sock\trunk\sock.tbh"
+include "dhcp\trunk\dhcp.tbh"
+include "ssi\trunk\ssi.tbh"
 include "libraries\super_i2c.tbh"
 include "libraries\tbt14.tbh"
 'DECLARATIONS--------------------------------------------------------
